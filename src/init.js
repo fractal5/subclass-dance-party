@@ -1,19 +1,21 @@
-$(document).ready(function(){
+$(document).ready(function() {
   window.dancers = [];
 
   window.plants = {};
   window.plants.flowers = [];
 
-  $(".addFlower").on("click", function(event){
+  $(".addFlower").on("click", function(event) {
     var flower = new MakeFlower(
-      $("body").height() * Math.random(),
+      ($("body").height() / 2) + ($("body").height() / 2) * Math.random(),
       $("body").width() * Math.random()
-      );
+    );
+
     window.plants.flowers.push(flower);
+
     $('body').append(flower.$node);
   })
 
-  $(".addDancerButton").on("click", function(event){
+  $(".addDancerButton").on("click", function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
      * As long as the "data-dancer-maker-function-name" attribute of a
@@ -53,6 +55,5 @@ $(document).ready(function(){
     }
 
   });
-    
-});
 
+});
