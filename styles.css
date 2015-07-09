@@ -21,7 +21,18 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  width: 20px;
+  height:20px;
+  background: red;
+  border:0px solid red;
+  border-radius:100%;
   position:absolute;
+}
+
+.plant {
+  width: 25px;
+  height:150px;
+  border: 1px solid white;
+  position: absolute;
+  float:left;
 }

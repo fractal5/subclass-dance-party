@@ -1,0 +1,27 @@
+
+assets:
+
+background image
+flower images
+trees
+bees
+clouds
+
+trees: 
+grow, first fast, then very very slowly & stop at random height
+wave in wind
+
+flowers
+grow to height
+age & die
+
+bees
+move randomly 
+
+clouds: float, left to right
+
+feature:
+bees find flowers
+
+
+

@@ -1,6 +1,18 @@
 $(document).ready(function(){
   window.dancers = [];
 
+  window.plants = {};
+  window.plants.flowers = [];
+
+  $(".addFlower").on("click", function(event){
+    var flower = new MakeFlower(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random()
+      );
+    window.plants.flowers.push(flower);
+    $('body').append(flower.$node);
+  })
+
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -22,12 +34,25 @@ $(document).ready(function(){
 
     // make a dancer with a random position
 
-    var dancer = dancerMakerFunction(
+    var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+
+    window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
+
+  $(".classLineUp").on("click", function(event) {
+    var width = $(window).width();
+    for (var i = 0; i < window.dancers.length; i++) {
+      var newLeft = (width / window.dancers.length) * (i + 1);
+      var newTop = 100;
+      window.dancers[i].setPosition(newTop, newLeft);
+    }
+
+  });
+    
 });
 
