@@ -30,9 +30,21 @@ body, a:link, a:visited, a:active{
 }
 
 .plant {
-  width: 25px;
+  width: 45px;
   height:150px;
-  border: 1px solid white;
+  /*border: 1px dotted white;*/
   position: absolute;
   float:left;
+}
+
+.flower-img{
+  width:45px;
+  position: relative;
+}
+
+.stemm-img {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  position: relative;
 }
