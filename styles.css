@@ -1,13 +1,29 @@
 body, html{
   height:100%;
-}
+/*  background-image: url('./assets/landscape-1.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+*/}
 body{
   margin: 0px;
-  background-color:#444;
+  background: url('./assets/landscape-2.jpg') no-repeat bottom center fixed;
+  /*background-image: url('./assets/landscape-1.png') no-repeat center center fixed; */
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+*/  background-color:#45b3fe;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
+}
+
+body {
+  /*cursor: crosshair; */
+  cursor:  url('./assets/crosshair-cursor.png') 35 35, auto;
 }
 .title, .addDancerButton{
   padding:5px 12px;
@@ -47,4 +63,53 @@ body, a:link, a:visited, a:active{
   height: 45px;
   margin: 0 auto;
   position: relative;
+}
+
+.bee {
+  /*background: white !important;*/
+
+}
+
+.beeOne {
+  background: url('./assets/bee-1.png') no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 35px;
+}
+
+.beeTwo {
+  background: url('./assets/bee-2.png') no-repeat;
+  background-size: 25px;
+  width: 35px;
+  height:35px;
+
+}
+
+.beeThree {
+  background: url('./assets/bee-3.png') no-repeat;
+  background-size: 45px;
+  width: 45px;
+  height:45px;
+}
+
+.counter {
+  float: right;
+  font-size: 45px;
+  color: white;
+  padding: 25px;
+}
+
+.gameOver {
+  position: absolute;
+  top:20px;
+  left:0;
+  width:100%;
+  height:100%;
+  margin: 0 auto;
+  padding-top: 150px;
+  background-color: rgba(100,100,100,0.8);
+}
+.gameOver .score, .gameOver div {
+  margin:0 auto;
+  font-size: 36px;
 }

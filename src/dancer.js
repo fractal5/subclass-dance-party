@@ -36,16 +36,16 @@ MakeDancer.prototype.setPosition = function(top, left){
 };
 
 MakeDancer.prototype.setMouseover = function() {
-  this.$node.on('mouseover',function(event) {
-    $(this).animate({
-      'width' : '50',
-      'height' : '50'
-    }, 100);
-  });
-  this.$node.on('mouseout',function(event) {
-    $(this).animate({
-      'width' : '20',
-      'height' : '20'
-    }, 100);
-  });
+  // this.$node.on('mouseover',function(event) {
+  //   $(this).animate({
+  //     'width' : '50',
+  //     'height' : '50'
+  //   }, 100);
+  // });
+  // this.$node.on('mouseout',function(event) {
+  //   $(this).animate({
+  //     'width' : '20',
+  //     'height' : '20'
+  //   }, 100);
+  // });
 };

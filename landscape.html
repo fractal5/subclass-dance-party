@@ -2,17 +2,57 @@
 <html>
   <head>
     <title>Object Dance Party</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="animate.css" />
     <script src="lib/jquery.js"></script>
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="src/dancer.js"></script>
     <script src="src/plant.js"></script>
     <script src="src/flower.js"></script>
+    <script src="src/bee.js"></script>
 
   </head>
   <body>
-    <div class="topbar">
-      <a href="#" class="addFlower">add a flower</a>, 
-    <script src="src/init.js"></script>
+
+<nav class=" navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    <div class='navbar-brand'>Bee Sniper</div> 
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+
+         <li><a href="#" class="startGame ">Start Game</a></li> 
+         <li> <a href="#" class="addFlower">add a flower</a></li> 
+         <li><a href="#" class="addBee">add a bee</a> </li>
+         <li><a href="#" class="BeeLineUp">easy mode</a></li>   
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            
+      
+
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class='timer'></div>
+    <div class='counter'>0</div> 
+
+<!--     <div class='navbar-brand'>Bee Sniper</div> 
+      <a href="#" class="startGame btn btn-default">Start Game</a> 
+      <a href="#" class="addFlower btn btn-default">add a flower</a> 
+      <a href="#" class="addBee btn btn-default">add a bee</a> 
+      <a href="#" class="BeeLineUp btn btn-default">easy mode</a>
+ -->
+    <script src="src/init.js"></script> 
   </body>
 </html>
