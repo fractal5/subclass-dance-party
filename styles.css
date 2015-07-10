@@ -46,21 +46,21 @@ body {
 }
 
 .plant {
-  width: 45px;
-  height:150px;
+  width: 20px;
+  height:75px;
   /*border: 1px dotted white;*/
   position: absolute;
   float:left;
 }
 
 .flower-img{
-  width:45px;
+  width:20px;
   position: relative;
 }
 
 .stemm-img {
-  width: 45px;
-  height: 45px;
+  width: 20px;
+  height: 20px;
   margin: 0 auto;
   position: relative;
 }

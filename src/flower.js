@@ -1,6 +1,5 @@
 var MakeFlower = function(top, left) {
   MakePlant.apply(this, arguments);
-  console.log('making flower...');
   this.selectSpecies();
 };
 
@@ -15,21 +14,14 @@ MakePlant.prototype.selectSpecies = function() {
   var flowerImg = '<img class="flower-img" src="' + basePath + selectedSpecies + '">';
   var stemmImg = '<img class="stemm-img" src="' + basePath + 'flower-stemm.png"></div>';
   
+  // Slowly let the flower grow
   $(flowerImg).hide().appendTo(this.$node).fadeIn(500).animate({
-    'top': "-=50"
+    'top': "-=20"
   }, 5000);
-
 
   $(stemmImg).hide().appendTo(this.$node).fadeIn(500).animate({
-    'height': '+=50',
-    'top': "-=50"
+    'height': '+=20',
+    'top': "-=20"
   }, 5000);
-
-  // $(stemm).hide().appendTo(this.$node).fadeIn(500);
-
 };
 
-MakeFlower.prototype.grow = function() {
-  MakePlant.prototype.grow.call(this);
-  // this.$node.fadeToggle();
-}

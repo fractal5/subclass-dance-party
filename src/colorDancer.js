@@ -7,6 +7,8 @@ MakeColorDancer.prototype.constructor = MakeColorDancer;
 
 MakeColorDancer.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
+
+  // Randomly select a color for our dancer.
   var colors = ['#129793', '#505050', '#FFF5C3', '#9BD7D5', '#FF7260'];
   var colorSettings = {
     'background': colors[Math.floor(Math.random() * colors.length)]
